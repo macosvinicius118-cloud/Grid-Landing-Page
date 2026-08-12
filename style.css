@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/*
+- White: hsl(0, 0%, 100%)
+
+- Blue 200: hsl(224, 100%, 95%)
+- Blue 400: hsl(220, 100%, 64%)
+- Blue 600: hsl(228, 100%, 60%)
+- Blue 700: hsl(228, 99%, 58%)
+
+- Black: hsl(0, 0%, 0%) — used at 25% opacity for the menu overlay
+
+
+- Font size (paragraph): 17px
+- Font size (stat descriptions, nav, footer): 14px
+
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 500
+*/
+
+:root{
+    --white: hsl(0, 0%, 100%);
+
+    --blue200: hsl(224, 100%, 95%);
+    --blue400: hsl(220, 100%, 64%);
+    --blue600: hsl(228, 100%, 60%);
+    --blue700: hsl(228, 99%, 58%);
+
+    --Black: hsl(0, 0%, 0%);
+
+    --font-inter: "inter",sans-serif;
+    --font-padrao: Arial, Helvetica, sans-serif;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-inter);
+    background-color: var(--blue700);
+    color: var(--white);
+}
+
+header{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px 10px 30px 10px;
+}
+
+span{
+    display: flex;
+    flex-flow: column wrap;
+    place-items: center;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+span > nav#items > a{
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    margin: 3px;
+    
+}
+
+nav{
+    display: flex;
+    flex-flow: column wrap;
+    
+}
+
+
+
